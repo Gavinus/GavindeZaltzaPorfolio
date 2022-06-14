@@ -1,0 +1,50 @@
+.about {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    font-family: "Cinzel Decorative", cursive;
+    color: #2eeffb;
+}
+
+.aboutContainer {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.aboutMeContainer {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.aboutMeContainer h1 {
+    margin-bottom: 10%;
+    font-size: 2.5em;
+}
+
+.aboutMeContainer p {
+    width: 80%;
+    font-size: 2em;
+}
+
+.aboutImgContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutImgContainer img{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
