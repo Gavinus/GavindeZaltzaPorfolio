@@ -11,7 +11,8 @@ const Form = ({ formData }) => {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <div className="formContainer" id="contact">
+    <div className="contactContainer" id="contact">
+      <div className="formContainer">
       <form onSubmit={handleSubmit(onSubmit)} className="form">
         <h1>For your coordonates</h1>
         {formData &&
@@ -30,6 +31,11 @@ const Form = ({ formData }) => {
           ))}
         <button type="submit">Envoyer</button>
       </form>
+      <div className="cvContainer">
+        <h1>If you need my CV</h1>
+        <img src="../../public/assets/vikingrunescv.png" alt="runeButtonCv" role="button"/>
+      </div>
+      </div>
     </div>
   );
 };
