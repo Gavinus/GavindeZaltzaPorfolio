@@ -13,8 +13,8 @@ const Recept = () => {
     // </div>
 
     // <div className="reception">
-    <div class="wrapper">
-      <div class="clip-text clip-text_one">
+    <div className="wrapper">
+      <div className="clip-text clip-text_one">
         <h1>GAVIN DE ZALTZA PORTFOLIO</h1>
       </div>
     </div>

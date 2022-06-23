@@ -1,85 +1,85 @@
 // FORM
 
 .formContainer {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    bottom: 0;
-    background-image: url("../../public/assets/cascadecontact.jpg");
-    background-size: cover;
-    text-align: center;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .formContainer input {
-    padding: 6px;
-    font-size: 14px;
-    border-width: 1px;
-    border-color: #37fafe;
-    background-color: #fbffff;
-    color: #2eeffb;
-    border-style: hidden;
-    border-radius: 5px;
-    box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
-    text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
-    text-align: center;
-  }
-  
-  .formContainer h1 {
-    margin: 2vh 7vw;
-    font-size: 2.5em;
-    font-family: "Cinzel Decorative", cursive;
-    color: #2eeffb;
-  }
-  
-  button {
-    width: 17%;
-    border: none;
-    padding: 6px;
-    font-size: 14px;
-    border-width: 1px;
-    border-color: #37fafe;
-    background-color: #fbffff;
-    color: #2eeffb;
-    border-style: hidden;
-    border-radius: 5px;
-    box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
-    text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
-    margin: 2vh 16vw;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    align-items: center;
-  }
-  button:hover {
-    color: white;
-    background-color: rgb(71, 242, 248);
-    transition: 0.5s ease-in-out;
-  }
-  .errorText {
-    color: red;
-  }
-  
-  label {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    margin: 2vh 12vw;
-  }
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  bottom: 0;
+  background-image: url("../../public/assets/cascadecontact.jpg");
+  background-size: cover;
+  text-align: center;
+}
 
-.cvContainer{
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.formContainer input {
+  padding: 6px;
+  font-size: 14px;
+  border-width: 1px;
+  border-color: #37fafe;
+  background-color: #fbffff;
+  color: #2eeffb;
+  border-style: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
+  text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
+  text-align: center;
+}
+
+.formContainer h1 {
+  margin: 2vh 7vw;
+  font-size: 2.5em;
+  font-family: "Cinzel Decorative", cursive;
+  color: #2eeffb;
+}
+
+button {
+  width: 17%;
+  border: none;
+  padding: 6px;
+  font-size: 14px;
+  border-width: 1px;
+  border-color: #37fafe;
+  background-color: #fbffff;
+  color: #2eeffb;
+  border-style: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
+  text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
+  margin: 2vh 16vw;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+}
+button:hover {
+  color: white;
+  background-color: rgb(71, 242, 248);
+  transition: 0.5s ease-in-out;
+}
+.errorText {
+  color: red;
+}
+
+label {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 12vw;
+}
+
+.cvContainer {
   height: 100%;
   display: flex;
   right: 0;
@@ -95,14 +95,13 @@
   animation-name: spin;
   animation-duration: 60s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 @keyframes spin {
   from {
-      transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-  

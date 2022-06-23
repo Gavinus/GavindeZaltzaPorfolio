@@ -17,17 +17,23 @@ const Skills = () => {
         <div className="skillContainerOne">
           <h2>LANGUAGES</h2>
           <p>
-            <img src="https://skillicons.dev/icons?i=react,js,typescript,nodejs,express,mysql,html,css,sass,tailwind&theme=dark&perline=4" />
+            <img
+              src="https://skillicons.dev/icons?i=react,js,typescript,nodejs,express,mysql,html,css,sass,tailwind&theme=dark&perline=4"
+              alt="iconeLanguage"
+            />
           </p>
-        </div>  
-        
+        </div>
+
         <div className="skillContainerTwo">
           <h2>TOOLS</h2>
           <p>
-            <img src="https://skillicons.dev/icons?i=vscode,visualstudio,figma,github,discord,linkedin&theme=dark&perline=4" />
+            <img
+              src="https://skillicons.dev/icons?i=vscode,visualstudio,figma,github,discord,linkedin&theme=dark&perline=4"
+              alt="iconeTool"
+            />
           </p>
-          </div>
-          </div>
+        </div>
+      </div>
     </div>
   );
 };

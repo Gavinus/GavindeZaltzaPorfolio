@@ -26,26 +26,26 @@ const Menu = () => {
           <ul>
             <li>
               <a href="#about" className="linkMenu">
-                <span className="before">ᚨᛒᛟᚢᛏ</span>
-                <span className="after">ABOUT</span>
+                {/* <span className="before">ᚨᛒᛟᚢᛏ</span> */}
+                <span>ABOUT</span>
               </a>
             </li>
             <li>
               <a href="#school" className="linkMenu">
-                <span className="before">ᛈᚱᛟᛃᛖᚲᛏᛊ</span>
-                <span className="after">PROJECTS</span>
+                {/* <span className="before">ᛈᚱᛟᛃᛖᚲᛏᛊ</span> */}
+                <span>PROJECTS</span>
               </a>
             </li>
             <li>
               <a href="#skills" className="linkMenu">
-                <span className="before">ᛊᛟᚠᛏ ᛊᚲᛁᛚᛚᛊ</span>
-                <span className="after">SOFT SKILLS</span>
+                {/* <span className="before">ᛊᛟᚠᛏ ᛊᚲᛁᛚᛚᛊ</span> */}
+                <span>SOFT SKILLS</span>
               </a>
             </li>
             <li className="contact">
               <a href="#contact" className="linkMenu">
-                <span className="before">ᚲᛟᚾᛏᚨᚲᛏ</span>
-                <span className="after">CONTACT</span>
+                {/* <span className="before">ᚲᛟᚾᛏᚨᚲᛏ</span> */}
+                <span>CONTACT</span>
               </a>
             </li>
           </ul>

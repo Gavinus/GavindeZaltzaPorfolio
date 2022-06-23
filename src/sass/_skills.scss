@@ -1,31 +1,31 @@
-.containerSkill1{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.containerSkill1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.SkillsContainer{
-    background-image: url("../../public/assets/valkyrie.jpg");
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    font-size: 1rem;
-    font-family: "Cinzel Decorative", cursive;
-    color: #2eeffb;
+.SkillsContainer {
+  background-image: url("../../public/assets/valkyrie.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  font-family: "Cinzel Decorative", cursive;
+  color: #2eeffb;
 }
 
-.skillContainer{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+.skillContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.skillContainer img{
-    height: 45vh;
-    width: 25vw;
+.skillContainer img {
+  height: 45vh;
+  width: 25vw;
 }
