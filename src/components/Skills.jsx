@@ -2,19 +2,21 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="SkillsContainer" id="skills">
-      <div className="containerSkill1">
+    <div className="skillsContainer" id="skills">
+      <div className="skillsContainer__skills">
         <h1>SOFT SKILLS</h1>
-        <div className="softskillContainer">
-          <li>User understanding</li>
-          <li>Adaptability</li>
-          <li>Dynamic</li>
-          <li>Self-taught</li>
-          <li>Passion for coding</li>
+        <div className="skillsContainer__skills__softSkillContainer">
+          <ul>
+            <li>- Adaptabilité</li>
+            <li>- Dynamique</li>
+            <li>- Motivé et déterminé</li>
+            <li>- Autodidacte</li>
+            <li>- Passion pour le code</li>
+          </ul>
         </div>
       </div>
-      <div className="skillContainer">
-        <div className="skillContainerOne">
+      <div className="skillsContainer__logoContainer">
+        <div className="skillsContainer__logoContainer__logoContainerOne">
           <h2>LANGUAGES</h2>
           <p>
             <img
@@ -24,7 +26,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="skillContainerTwo">
+        <div className="skillsContainer__logoContainer__logoContainerTwo">
           <h2>TOOLS</h2>
           <p>
             <img

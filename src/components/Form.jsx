@@ -1,5 +1,7 @@
+import React from "react";
 import { useForm } from "react-hook-form";
 import { formatText } from "../utils/utils";
+
 /* eslint-disable */
 const Form = ({ formData }) => {
   const {
@@ -14,7 +16,7 @@ const Form = ({ formData }) => {
     <div className="contactContainer" id="contact">
       <div className="formContainer">
         <form onSubmit={handleSubmit(onSubmit)} className="form">
-          <h1>For your coordonates</h1>
+          <h1>Vos Coordonnées</h1>
           {formData &&
             formData.map((data, index) => (
               <label key={index}>
@@ -29,15 +31,20 @@ const Form = ({ formData }) => {
                 )}
               </label>
             ))}
-          <button type="submit">Envoyer</button>
+          <button className="formButton" type="submit">
+            Envoyer
+          </button>
         </form>
+
         <div className="cvContainer">
-          <h1>If you need my CV</h1>
-          <img
-            src="../../public/assets/vikingrunescv.png"
-            alt="runeButtonCv"
-            role="button"
-          />
+          <h1>Curriculum Vitae</h1>
+          <a href="../public/assets/GavinCV2022.pdf" download>
+            <img
+              src="../../public/assets/vikingrunescv.png"
+              alt="runeButtonCv"
+              role="button"
+            />
+          </a>
         </div>
       </div>
     </div>

@@ -1,31 +1,57 @@
-.containerSkill1 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.SkillsContainer {
+.skillsContainer {
   background-image: url("../../public/assets/valkyrie.jpg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   font-size: 1rem;
   font-family: "Cinzel Decorative", cursive;
   color: #2eeffb;
-}
+  &__skills {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      margin-bottom: 20px;
+    }
 
-.skillContainer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.skillContainer img {
-  height: 45vh;
-  width: 25vw;
+    &__softSkillContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      ul {
+        list-style: none;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  &__logoContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      margin: 20px 0 20px 0;
+    }
+    &__logoContainerOne {
+      height: 50%;
+    }
+    &__logoContainerTwo {
+      height: 50%;
+    }
+  }
 }
