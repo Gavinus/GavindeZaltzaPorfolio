@@ -1,25 +1,3 @@
-// .reception {
-//   height: 100vh;
-//   width: 100vw;
-//   min-height: 100%;
-// }
-
-// .receptionBackground {
-//   height: 100%;
-//   width: 100%;
-//   background-image: url(../../public/assets/drakkar.jpg);
-//   background-size: cover;
-// }
-
-// .receptionBloc1 {
-//   height: 100vh;
-//   width: 100vw;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-// }
-
 *,
 :before,
 :after {
@@ -35,7 +13,13 @@ body {
 }
 
 .wrapper {
+  font-family: "Oswald", sans-serif;
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60%;
 }
 
 .title {
@@ -58,19 +42,23 @@ body {
 }
 
 /* Clip text element */
+
+.nameH {
+  font-size: 4rem;
+}
+
 .clip-text {
-  font-size: 6em;
+  height: 25%;
+  /* font-size: 2rem; */
   font-weight: bold;
-  line-height: 1;
+  line-height: 2;
   position: relative;
   display: inline-block;
-  margin: 0.25em;
+  margin: 1.25em;
   padding: 0.5em 0.75em;
   text-align: center;
-  /* Color fallback */
   color: #fff;
   -webkit-background-clip: text;
-
   -webkit-text-fill-color: transparent;
 }
 
@@ -85,11 +73,11 @@ body {
   z-index: -2;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -30rem;
   left: 0;
   background-image: inherit;
+  background-size: cover;
 }
-
 /* Text Background (black zone) */
 .clip-text:after {
   position: absolute;
@@ -122,4 +110,27 @@ body {
 /* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
 .clip-text_one {
   background-image: url(../../public/assets/drakkar.jpg);
+  // background-size: cover;
+  width: 75%;
+}
+
+.menuButton {
+  overflow: hidden;
+  height: 30px;
+  width: 60px;
+  background-color: black;
+  border-width: 1px;
+  border-color: #37fafe;
+  border-radius: 5px;
+  position: fixed;
+  color: white;
+  margin: 5vh 3vw;
+  box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
+  text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
+  cursor: pointer;
+}
+
+.menuContainer {
+  z-index: 1;
+  position: fixed;
 }
