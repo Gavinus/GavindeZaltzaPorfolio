@@ -17,11 +17,7 @@ const About = () => {
           </p>
         </div>
         <div className="about__aboutContainer__aboutImgContainer">
-          <img
-            type="image"
-            src="./assets/image/gavtof.jpg"
-            alt="myPicture"
-          />
+          <img type="image" src="./assets/image/gavtof.jpg" alt="myPicture" />
         </div>
       </div>
     </div>
