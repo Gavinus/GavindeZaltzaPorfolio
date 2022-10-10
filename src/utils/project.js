@@ -4,7 +4,7 @@ const projectDetails = [
     name: "wildstone",
     url: "https://wildstone.vercel.app/",
     langage: "tailwind,  react,  nodeJS,  Javascript",
-    image: "/public/assets/wildstone.png",
+    image: "./assets/wildstone.png",
     desc: "Reprise du célèbre jeu Hearth Stone, axé sur la prise en main d'un jeu de carte sur plateau pour non initié.",
   },
   {
@@ -12,7 +12,7 @@ const projectDetails = [
     name: "sauvequipeut",
     url: "https://sauvequipeut.vercel.app/",
     langage: "tailwind,  react",
-    image: "/public/assets/sauvquipeut.png",
+    image: "./assets/sauvquipeut.png",
     desc: "Gagnant d'un hackathon de 24h sur le thème de l'écologie.",
   },
   {
@@ -20,7 +20,7 @@ const projectDetails = [
     name: "Pocli",
     url: "https://pocli.vercel.app/",
     langage: "scss,  react,  nodeJS,  typescript",
-    image: "/public/assets/pocli.png",
+    image: "./assets/pocli.png",
     desc: "Projet final de fin de formation pour une Association afin de regrouper des personnes ou familles et proposer des activités.",
   },
   {
@@ -28,7 +28,7 @@ const projectDetails = [
     name: "Samourai Fight 2D",
     url: "https://gav-samourai2dfight.netlify.app/",
     langage: "HTML,  CSS,  JS,  canvas",
-    image: "/public/assets/samouraifight.png",
+    image: "./assets/samouraifight.png",
     desc: "Entrainement à canvas pour créer un jeu en 2D prochainement en React/Typescript.",
   },
 ];
