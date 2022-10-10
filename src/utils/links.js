@@ -1,21 +1,21 @@
 const links = [
   {
-    id: 1,
+    id: 0,
     path: "#about",
     name: "About",
   },
   {
-    id: 2,
+    id: 1,
     path: "#skills",
     name: "Skills",
   },
   {
-    id: 3,
+    id: 2,
     path: "#project",
     name: "Projets",
   },
   {
-    id: 4,
+    id: 3,
     path: "#contact",
     name: "Contact",
   },

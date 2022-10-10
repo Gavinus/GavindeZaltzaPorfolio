@@ -1,102 +1,101 @@
 // FORM
-
 .formContainer {
   height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  color: white;
-  bottom: 0;
+  justify-content: flex-end;
   background-image: url("../../public/assets/cascadecontact.jpg");
   background-size: cover;
   text-align: center;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    h1 {
+      margin: 2% 0;
+      font-size: 36px;
+      font-family: "Cinzel Decorative", cursive;
+      color: #2eeffb
+    }
+    label {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-direction: column;
+      margin: 2% 0;
+      input {
+        width: 50%;
+        padding: 6px;
+        font-size: 14px;
+        border-width: 1px;
+        border-color: #37fafe;
+        background-color: #fbffff;
+        color: #2eeffb;
+        border-style: hidden;
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
+        text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
+        text-align: center;
+      }
+      p {
+        margin-top: 1%;
+        color: red;
+      }
+    }
+    &__formButton {
+        width: 17%;
+        border: none;
+        padding: 6px;
+        font-size: 14px;
+        border-width: 1px;
+        border-color: #37fafe;
+        background-color: #fbffff;
+        color: #2eeffb;
+        border-style: hidden;
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
+        text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
+        margin: 2vh 16vw;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        :hover {
+          color: white;
+          background-color: rgb(71, 242, 248);
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+  
+  &__cvContainer {
+    height: 100%;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      margin: 2% 0;
+      font-size: 36px;
+      font-family: "Cinzel Decorative", cursive;
+      color: #2eeffb
+    }
+    img {
+      width: 50%;
+      cursor: pointer;
+      animation-name: spin;
+      animation-duration: 60s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-}
-
-.formContainer input {
-  padding: 6px;
-  font-size: 14px;
-  border-width: 1px;
-  border-color: #37fafe;
-  background-color: #fbffff;
-  color: #2eeffb;
-  border-style: hidden;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
-  text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
-  text-align: center;
-}
-
-.formContainer h1 {
-  margin: 2vh 7vw;
-  font-size: 2.5em;
-  font-family: "Cinzel Decorative", cursive;
-  color: #2eeffb;
-}
-
-.formButton {
-  width: 17%;
-  border: none;
-  padding: 6px;
-  font-size: 14px;
-  border-width: 1px;
-  border-color: #37fafe;
-  background-color: #fbffff;
-  color: #2eeffb;
-  border-style: hidden;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
-  text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
-  margin: 2vh 16vw;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  align-items: center;
-}
-button:hover {
-  color: white;
-  background-color: rgb(71, 242, 248);
-  transition: 0.5s ease-in-out;
-}
-.errorText {
-  color: red;
-}
-
-label {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  margin: 2vh 12vw;
-}
-
-.cvContainer {
-  height: 100%;
-  display: flex;
-  right: 0;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.cvContainer img {
-  width: 60%;
-  cursor: pointer;
-  animation-name: spin;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -105,3 +104,4 @@ label {
     transform: rotate(360deg);
   }
 }
+

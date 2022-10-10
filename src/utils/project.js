@@ -23,14 +23,6 @@ const projectDetails = [
     image: "/public/assets/pocli.png",
     desc: "Projet final de fin de formation pour une Association afin de regrouper des personnes ou familles et proposer des activités.",
   },
-  // {
-  //   id: 3,
-  //   name: "projet42",
-  //   url: "https://sauvequipeut.vercel.app/",
-  //   langage: "tailwind,  react,  nodeJS,  Javascript",
-  //   image: "/public/assets/sauvquipeut.png",
-  //   desc: "Reprise du célèbre jeu Heath Stone pour axé sur la prise en main d'un jeu de carte sur plateau.",
-  // },
   {
     id: 3,
     name: "Samourai Fight 2D",

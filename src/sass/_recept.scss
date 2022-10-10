@@ -12,14 +12,105 @@ body {
   background-color: #000;
 }
 
-.wrapper {
-  font-family: "Oswald", sans-serif;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60%;
+.receptContainer {
+  &__menuButton {
+    overflow: hidden;
+    height: 30px;
+    width: 60px;
+    background-color: black;
+    border-width: 1px;
+    border-color: #37fafe;
+    border-radius: 5px;
+    position: fixed;
+    color: white;
+    margin: 5vh 3vw;
+    box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
+    text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
+    cursor: pointer;
+  }
+  &__wrapperContainer {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__wrapper {
+    margin-top: 7%;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60%;
+    &__clip-text {
+      height: 25%;
+      /* font-size: 2rem; */
+      font-weight: bold;
+      line-height: 2;
+      position: relative;
+      display: inline-block;
+      margin: 1.25em;
+      padding: 0.5em 0.75em;
+      text-align: center;
+      color: #fff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    // Background image
+    &__clip-text_one {
+      background-image: url(../../public/assets/drakkar.jpg);
+      width: 75%;
+    }
+    &__clip-text:before,
+    &__clip-text:after {
+      position: absolute;
+      content: "";
+    }
+    &__clip-text:before {
+      z-index: -2;
+      top: 0;
+      right: 0;
+      bottom: -27rem;
+      left: 0;
+      background-image: inherit;
+      background-size: cover;
+    }
+    /* Text Background (black zone) */
+    &__clip-text:after {
+      position: absolute;
+      z-index: -1;
+      top: 0.125em;
+      right: 0.125em;
+      bottom: 0.125em;
+      left: 0.125em;
+      background-color: #000;
+    }
+    /* Change the background position to display letter when the black zone isn't here */
+    &__clip-text--no-textzone:before {
+      background-position: -0.75em 0;
+    }
+
+    &__clip-text--no-textzone:after {
+      content: none;
+    }
+    /* Use Background-size cover for photo background and no-repeat background */
+    &__clip-text--cover,
+    &__clip-text--cover:before {
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  }
+    &__pageContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
 }
 
 .title {
@@ -45,92 +136,4 @@ body {
 
 .nameH {
   font-size: 4rem;
-}
-
-.clip-text {
-  height: 25%;
-  /* font-size: 2rem; */
-  font-weight: bold;
-  line-height: 2;
-  position: relative;
-  display: inline-block;
-  margin: 1.25em;
-  padding: 0.5em 0.75em;
-  text-align: center;
-  color: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.clip-text:before,
-.clip-text:after {
-  position: absolute;
-  content: "";
-}
-
-/* Background */
-.clip-text:before {
-  z-index: -2;
-  top: 0;
-  right: 0;
-  bottom: -30rem;
-  left: 0;
-  background-image: inherit;
-  background-size: cover;
-}
-/* Text Background (black zone) */
-.clip-text:after {
-  position: absolute;
-  z-index: -1;
-  top: 0.125em;
-  right: 0.125em;
-  bottom: 0.125em;
-  left: 0.125em;
-  background-color: #000;
-}
-
-/* Change the background position to display letter when the black zone isn't here */
-.clip-text--no-textzone:before {
-  background-position: -0.75em 0;
-}
-
-.clip-text--no-textzone:after {
-  content: none;
-}
-
-/* Use Background-size cover for photo background and no-repeat background */
-.clip-text--cover,
-.clip-text--cover:before {
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
-.clip-text_one {
-  background-image: url(../../public/assets/drakkar.jpg);
-  // background-size: cover;
-  width: 75%;
-}
-
-.menuButton {
-  overflow: hidden;
-  height: 30px;
-  width: 60px;
-  background-color: black;
-  border-width: 1px;
-  border-color: #37fafe;
-  border-radius: 5px;
-  position: fixed;
-  color: white;
-  margin: 5vh 3vw;
-  box-shadow: 0px 0px 8px rgba(8, 239, 252, 0.75);
-  text-shadow: 0px 0px 2px rgba(4, 248, 236, 0.79);
-  cursor: pointer;
-}
-
-.menuContainer {
-  z-index: 1;
-  position: fixed;
 }

@@ -12,7 +12,7 @@ const About = () => {
             <span>Developpement Web</span> début d&apos;année 2022. Après avoir
             réussi une formation <span>Full Stack</span> de 5 mois, je recherche
             une <span>entreprise</span> ou une <span>alternance</span> pour
-            travailler dans le milieu et continué à <span>apprendre</span> et
+            travailler dans le milieu et continuer à <span>apprendre</span> et
             faire <span>évoluer</span> mes connaissances.
           </p>
         </div>
