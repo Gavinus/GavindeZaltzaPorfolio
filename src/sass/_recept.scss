@@ -29,88 +29,86 @@ body {
     cursor: pointer;
   }
   &__wrapperContainer {
-
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     &__wrapper {
-    margin-top: 7%;
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60%;
-    &__clip-text {
-      height: 25%;
-      /* font-size: 2rem; */
-      font-weight: bold;
-      line-height: 2;
-      position: relative;
-      display: inline-block;
-      margin: 1.25em;
-      padding: 0.5em 0.75em;
+      margin-top: 7%;
+      font-family: "Oswald", sans-serif;
       text-align: center;
-      color: #fff;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    // Background image
-    &__clip-text_one {
-      background-image: url(../../public/assets/drakkar.jpg);
-      width: 75%;
-    }
-    &__clip-text:before,
-    &__clip-text:after {
-      position: absolute;
-      content: "";
-    }
-    &__clip-text:before {
-      z-index: -2;
-      top: 0;
-      right: 0;
-      bottom: -27rem;
-      left: 0;
-      background-image: inherit;
-      background-size: cover;
-    }
-    /* Text Background (black zone) */
-    &__clip-text:after {
-      position: absolute;
-      z-index: -1;
-      top: 0.125em;
-      right: 0.125em;
-      bottom: 0.125em;
-      left: 0.125em;
-      background-color: #000;
-    }
-    /* Change the background position to display letter when the black zone isn't here */
-    &__clip-text--no-textzone:before {
-      background-position: -0.75em 0;
-    }
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60%;
+      &__clip-text {
+        height: 25%;
+        /* font-size: 2rem; */
+        font-weight: bold;
+        line-height: 2;
+        position: relative;
+        display: inline-block;
+        margin: 1.25em;
+        padding: 0.5em 0.75em;
+        text-align: center;
+        color: #fff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      // Background image
+      &__clip-text_one {
+        background-image: url(../../public/assets/image/drakkar.jpg);
+        width: 75%;
+      }
+      &__clip-text:before,
+      &__clip-text:after {
+        position: absolute;
+        content: "";
+      }
+      &__clip-text:before {
+        z-index: -2;
+        top: 0;
+        right: 0;
+        bottom: -27rem;
+        left: 0;
+        background-image: inherit;
+        background-size: cover;
+      }
+      /* Text Background (black zone) */
+      &__clip-text:after {
+        position: absolute;
+        z-index: -1;
+        top: 0.125em;
+        right: 0.125em;
+        bottom: 0.125em;
+        left: 0.125em;
+        background-color: #000;
+      }
+      /* Change the background position to display letter when the black zone isn't here */
+      &__clip-text--no-textzone:before {
+        background-position: -0.75em 0;
+      }
 
-    &__clip-text--no-textzone:after {
-      content: none;
+      &__clip-text--no-textzone:after {
+        content: none;
+      }
+      /* Use Background-size cover for photo background and no-repeat background */
+      &__clip-text--cover,
+      &__clip-text--cover:before {
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: 50% 50%;
+      }
     }
-    /* Use Background-size cover for photo background and no-repeat background */
-    &__clip-text--cover,
-    &__clip-text--cover:before {
-      background-repeat: no-repeat;
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: 50% 50%;
-    }
-  }
     &__pageContainer {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
   }
-  
 }
 
 .title {
