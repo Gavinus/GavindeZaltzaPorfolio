@@ -19,7 +19,7 @@ const About = () => {
         <div className="about__aboutContainer__aboutImgContainer">
           <img
             type="image"
-            src="../public/assets/image/gavtof.jpg"
+            src="./assets/image/gavtof.jpg"
             alt="myPicture"
           />
         </div>

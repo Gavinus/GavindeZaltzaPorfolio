@@ -37,9 +37,9 @@ const Form = ({ formData }) => {
       </form>
 
       <div className="formContainer__cvContainer">
-        <a href="../public/assets/image/GavinCV2022.pdf" download>
+        <a href="./assets/image/GavinCV2022.pdf" download>
           <img
-            src="../../public/assets/image/vikingrunescv.png"
+            src="./assets/image/vikingrunescv.png"
             alt="Cv"
             role="button"
           />
