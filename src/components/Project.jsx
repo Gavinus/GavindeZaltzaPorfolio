@@ -10,20 +10,6 @@ const Project = () => {
   return (
     <div className="projectContainer" id="project">
       <div className="projectContainer__detailsContainer">
-        {/*
-            {projectDetails && (
-              projectDetails.map((proj, index) => index < 2 && (
-                <div key={index}
-                style={{ backgroundImage: `url(${proj.image})`}}>
-                <a href={proj.url}>
-                  <h1>{proj.name}</h1>
-                </a>
-                <p>{proj.language}</p>
-                </div>
-              ))
-            )}
-          */}
-
         <div className="projectContainer__detailsContainer__bandUp">
           {/* Description texte */}
           <div className="projectContainer__detailsContainer__bandUp__aboutProject">

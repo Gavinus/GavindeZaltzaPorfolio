@@ -9,12 +9,12 @@ import { dataLogin } from "../utils/dataLogin";
 const Recept = () => {
   const [menu, setMenu] = useState(false);
 
-  // variable pour passer showMenu à true / false
   const showMenu = () => {
     setMenu(!menu);
   };
 
   return (
+    // Menu button
     <div
       className="receptContainer"
       onClick={() => menu && !showMenu()}
@@ -24,7 +24,7 @@ const Recept = () => {
     >
       <button
         type="button"
-        className="menuButton"
+        className="receptContainer__menuButton"
         onClick={() => showMenu()}
         onKeyDown={() => showMenu()}
       >
@@ -37,14 +37,15 @@ const Recept = () => {
           </div>
         )}
       </div>
-      <div className="wrapper">
-        <div className="clip-text clip-text_one">
-          <h1 className="nameH">GAVIN DE ZALTZA</h1>
-          <h1> PORTFOLIO</h1>
+      <div className="receptContainer__wrapperContainer">
+        <div className="receptContainer__wrapperContainer__wrapper">
+          <div className="receptContainer__wrapperContainer__wrapper__clip-text receptContainer__wrapperContainer__wrapper__clip-text_one">
+            <h1 className="nameH">GAVIN DE ZALTZA</h1>
+            <h1> PORTFOLIO</h1>
+          </div>
         </div>
       </div>
-
-      <div className="pageContainer">
+      <div className="receptContainer__pageContainer">
         <About />
         <Skills />
         <Project />

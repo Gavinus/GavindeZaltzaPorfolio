@@ -13,9 +13,9 @@ const Form = ({ formData }) => {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <div className="contactContainer" id="contact">
-      <div className="formContainer">
-        <form onSubmit={handleSubmit(onSubmit)} className="form">
+    // <div className="contactContainer" >
+      <div className="formContainer" id="contact">
+        <form onSubmit={handleSubmit(onSubmit)} className="formContainer__form">
           <h1>Vos Coordonnées</h1>
           {formData &&
             formData.map((data, index) => (
@@ -31,23 +31,22 @@ const Form = ({ formData }) => {
                 )}
               </label>
             ))}
-          <button className="formButton" type="submit">
+          <button className="formContainer__form__formButton" type="submit">
             Envoyer
           </button>
         </form>
 
-        <div className="cvContainer">
-          <h1>Curriculum Vitae</h1>
+        <div className="formContainer__cvContainer">
           <a href="../public/assets/GavinCV2022.pdf" download>
             <img
               src="../../public/assets/vikingrunescv.png"
-              alt="runeButtonCv"
+              alt="Cv"
               role="button"
             />
           </a>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 

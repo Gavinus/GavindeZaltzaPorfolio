@@ -11,10 +11,14 @@ const Skills = () => {
             <li>- Dynamique</li>
             <li>- Motivé et déterminé</li>
             <li>- Autodidacte</li>
+            <li>- Travail d'équipe</li>
             <li>- Passion pour le code</li>
           </ul>
         </div>
       </div>
+
+      <div className="skillsContainer__middleBarre"/>
+
       <div className="skillsContainer__logoContainer">
         <div className="skillsContainer__logoContainer__logoContainerOne">
           <h2>LANGUAGES</h2>
